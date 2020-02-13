@@ -24,10 +24,16 @@ namespace excersises2
                     m.CalculateElements();
                     break;
                 case 4:
-                    m.SwapNum();
+                    Console.WriteLine("First number:");
+                    int a = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Second number:");
+                    int b = int.Parse(Console.ReadLine());
+                    m.SwapNum(ref a, ref b);
                     break;
                 case 5:
-                    m.getFibonacci();
+                    Console.WriteLine("Enter a number:");
+                    int i = int.Parse(Console.ReadLine());
+                    m.getFibonacci(0, 1, 1, i);
                     break;
             }
             Console.Read();

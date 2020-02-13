@@ -10,7 +10,7 @@ namespace excersises2
     {
         public void HelloMethod()
         {
-            Console.WriteLine("Welcome firends!");
+            Console.WriteLine("Welcome friends!");
             Console.WriteLine("Have a nice day!");
         }
         public void SpaceCount()
@@ -32,41 +32,23 @@ namespace excersises2
             {
                 m[i] = int.Parse(Console.ReadLine());
             }
-            int sum = 0;
-            foreach (var el in m)
-            {
-                sum += el;
-            }
+            int sum = (from el in m
+                       select el).Sum();
             Console.WriteLine("The sum of the elements int the output is: " + sum);
         }
 
-        public void SwapNum()
+        public void SwapNum(ref int a, ref int b)
         {
-            Console.WriteLine("First number:");
-            int a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Second number:");
-            int b = int.Parse(Console.ReadLine());
-
             Console.WriteLine($"Now the first number is {b} and second is {a}");
         }
 
-        public void getFibonacci()
+        public void getFibonacci(int n1, int n2,int i, int n)
         {
-            Console.WriteLine("Enter a number:");
-            int n = int.Parse(Console.ReadLine());
-            int fib = 0;
-            int n1 = 1, n2 = 1;
-            if (n > 2)
+            if (i < n)
             {
-                for (int i = 2; i < n; i++)
-                {
-                    fib = n1 + n2;
-                    n1 = n2;
-                    n2 = fib;
-                }
+                getFibonacci(n2, n1 + n2, i + 1, n);
             }
-            else fib = 1;
-            Console.WriteLine($"The fibonacci of {n} is: {fib}");
+            Console.WriteLine($"The fibonacci of {i} is: {n1}");
         }
     }
 }
