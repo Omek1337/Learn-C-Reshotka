@@ -1,0 +1,6 @@
+C:\Users\Andrey\source\repos\excersises2\excersises2\bin\Debug\excersises2.exe.config
+C:\Users\Andrey\source\repos\excersises2\excersises2\bin\Debug\excersises2.exe
+C:\Users\Andrey\source\repos\excersises2\excersises2\bin\Debug\excersises2.pdb
+C:\Users\Andrey\source\repos\excersises2\excersises2\obj\Debug\excersises2.csprojAssemblyReference.cache
+C:\Users\Andrey\source\repos\excersises2\excersises2\obj\Debug\excersises2.exe
+C:\Users\Andrey\source\repos\excersises2\excersises2\obj\Debug\excersises2.pdb
