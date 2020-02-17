@@ -1,0 +1,6 @@
+C:\Users\andrejs.lipskis\source\repos\CoffeMachine\MakeMeACoffee\bin\Debug\MakeMeACoffee.exe.config
+C:\Users\andrejs.lipskis\source\repos\CoffeMachine\MakeMeACoffee\bin\Debug\MakeMeACoffee.exe
+C:\Users\andrejs.lipskis\source\repos\CoffeMachine\MakeMeACoffee\bin\Debug\MakeMeACoffee.pdb
+C:\Users\andrejs.lipskis\source\repos\CoffeMachine\MakeMeACoffee\obj\Debug\MakeMeACoffee.csprojAssemblyReference.cache
+C:\Users\andrejs.lipskis\source\repos\CoffeMachine\MakeMeACoffee\obj\Debug\MakeMeACoffee.exe
+C:\Users\andrejs.lipskis\source\repos\CoffeMachine\MakeMeACoffee\obj\Debug\MakeMeACoffee.pdb
