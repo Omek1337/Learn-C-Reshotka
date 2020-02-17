@@ -29,13 +29,13 @@ namespace MakeMeACoffee
                 switch (coffeeNum)
                 {
                     case 1:
-                        Philips3200 cm1 = new Philips3200();
-                        cm1.MakeDecision(cm1.GiveMenu());
+                        Philips3200 phillips = new Philips3200();
+                        phillips.MakeDecision(phillips.GiveMenu());
 
                         break;
                     case 2:
-                        RussellHobbs2000 cm2 = new RussellHobbs2000();
-                        cm2.MakeDecision(cm2.GiveMenu());
+                        RussellHobbs2000 russell = new RussellHobbs2000();
+                        russell.MakeDecision(russell.GiveMenu());
                         break;
                     default:
                         break;

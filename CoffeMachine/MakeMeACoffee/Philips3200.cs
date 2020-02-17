@@ -32,35 +32,41 @@ namespace MakeMeACoffee
             base.PourHotWater();
 
         }
-        public override int GiveMenu()
+        public override DrinkType GiveMenu()
         {
             base.GiveMenu();
             Console.WriteLine("1. Water");
             Console.WriteLine("2. Espresso");
             Console.WriteLine("3. Latte");
-            Console.WriteLine("4. Black Tea");
+            Console.WriteLine("4. BlackTea");
             Console.WriteLine("5. Americano");
-
-            return int.Parse(Console.ReadLine());
+            int chosenDrinkNum = int.Parse(Console.ReadLine());
+            DrinkType chosenDrink;
+            chosenDrink = (chosenDrinkNum == 1) ? DrinkType.Water : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 2) ? DrinkType.Espresso : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 3) ? DrinkType.Latte : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 4) ? DrinkType.BlackTea : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 5) ? DrinkType.Americano : DrinkType.Water;
+            return chosenDrink;
         }
 
-        public override void MakeDecision(int chosenDrink)
+        public override void MakeDecision(DrinkType chosenDrink)
         {
             switch (chosenDrink)
             {
-                case 1:
+                case DrinkType.Water:
                     PourWater();
                     break;
-                case 2:
+                case DrinkType.Espresso:
                     MakeEspresso();
                     break;
-                case 3:
+                case DrinkType.Latte:
                     MakeLatte();
                     break;
-                case 4:
+                case DrinkType.BlackTea:
                     MakeBlackTea();
                     break;
-                case 5:
+                case DrinkType.Americano:
                     MakeAmericano();
                     break;
                 default:

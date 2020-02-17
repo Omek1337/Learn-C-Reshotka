@@ -13,7 +13,7 @@ namespace MakeMeACoffee
         void PourCoffee();
         void AddChocolate();
         void AddTeaBag(bool isGreen);
-        int GiveMenu();
-        void MakeDecision(int chosenDrink);
+        DrinkType GiveMenu();
+        void MakeDecision(DrinkType chosenDrink);
     }
 }

@@ -6,6 +6,18 @@ using System.Threading.Tasks;
 
 namespace MakeMeACoffee
 {
+    enum DrinkType
+    {
+        Water,
+        Espresso,
+        DoubleEspresso,
+        Latte,
+        BlackTea,
+        GreenTea,
+        Americano,
+        Cappuccino,
+        Mocachino
+    }
     abstract class CoffeMachine : ICoffeMachine
     {
         public void AddChocolate()
@@ -40,12 +52,12 @@ namespace MakeMeACoffee
             }else Console.WriteLine("Pouring less milk...");
 
         }
-        public virtual int GiveMenu()
+        public virtual DrinkType GiveMenu()
         {
             Console.WriteLine("Here's the menu: ");
-            return 1;
+            return DrinkType.Water;
         }
-        public virtual void MakeDecision(int chosenDrink) 
+        public virtual void MakeDecision(DrinkType chosenDrink) 
         {
             Console.WriteLine("Enjoy your drink!");
             Console.ReadLine();

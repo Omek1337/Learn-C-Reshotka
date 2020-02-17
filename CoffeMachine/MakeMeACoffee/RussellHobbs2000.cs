@@ -38,7 +38,7 @@ namespace MakeMeACoffee
             base.AddChocolate();
 
         }
-        public override int GiveMenu() 
+        public override DrinkType GiveMenu() 
         {
             base.GiveMenu();
             Console.WriteLine("1. Water");
@@ -47,29 +47,37 @@ namespace MakeMeACoffee
             Console.WriteLine("4. Cappuccino");
             Console.WriteLine("5. Green Tea");
             Console.WriteLine("6. Mocachino");
-            return int.Parse(Console.ReadLine());
+            int chosenDrinkNum = int.Parse(Console.ReadLine());
+            DrinkType chosenDrink;
+            chosenDrink = (chosenDrinkNum == 1) ? DrinkType.Water : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 2) ? DrinkType.Espresso : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 3) ? DrinkType.DoubleEspresso : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 4) ? DrinkType.Cappuccino : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 5) ? DrinkType.GreenTea : DrinkType.Water;
+            chosenDrink = (chosenDrinkNum == 6) ? DrinkType.Mocachino : DrinkType.Water;
+            return chosenDrink;
         }
 
-        public override void MakeDecision(int chosenDrink)
+        public override void MakeDecision(DrinkType chosenDrink)
         {
             switch (chosenDrink)
             {
-                case 1:
+                case DrinkType.Water:
                     PourWater();
                     break;
-                case 2:
+                case DrinkType.Espresso:
                     MakeEspresso();
                     break;
-                case 3:
+                case DrinkType.DoubleEspresso:
                     MakeDoubleEspresso();
                     break;
-                case 4:
+                case DrinkType.Cappuccino:
                     MakeCappuccino();
                     break;
-                case 5:
+                case DrinkType.GreenTea:
                     MakeGreenTea();
                     break;
-                case 6:
+                case DrinkType.Mocachino:
                     MakeMocachino();
                     break;
                 default:
