@@ -41,12 +41,13 @@ namespace MakeMeACoffee
             Console.WriteLine("4. BlackTea");
             Console.WriteLine("5. Americano");
             int chosenDrinkNum = int.Parse(Console.ReadLine());
-            DrinkType chosenDrink;
-            chosenDrink = (chosenDrinkNum == 1) ? DrinkType.Water : DrinkType.Water;
-            chosenDrink = (chosenDrinkNum == 2) ? DrinkType.Espresso : DrinkType.Water;
-            chosenDrink = (chosenDrinkNum == 3) ? DrinkType.Latte : DrinkType.Water;
-            chosenDrink = (chosenDrinkNum == 4) ? DrinkType.BlackTea : DrinkType.Water;
-            chosenDrink = (chosenDrinkNum == 5) ? DrinkType.Americano : DrinkType.Water;
+            DrinkType chosenDrink = DrinkType.Water;
+            if (chosenDrinkNum == 1) chosenDrink = DrinkType.Water;
+            else if (chosenDrinkNum == 2) chosenDrink = DrinkType.Espresso;
+            else if (chosenDrinkNum == 3) chosenDrink = DrinkType.Latte;
+            else if (chosenDrinkNum == 4) chosenDrink = DrinkType.BlackTea;
+            else if (chosenDrinkNum == 5) chosenDrink = DrinkType.Americano;
+    
             return chosenDrink;
         }
 
